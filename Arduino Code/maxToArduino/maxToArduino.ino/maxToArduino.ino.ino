@@ -50,7 +50,7 @@ public:
       lastUpdate = millis();
       pos += increment;
       servo.write(pos);
-      Serial.println(pos);
+//      Serial.println(pos);
       if ((pos >= 90) || (pos <= 0)) // end of sweep
       {
         // reverse direction
@@ -89,6 +89,7 @@ class Flasher
 
   void setState(int val){
     ledState = val;
+    Serial.print("helel");
   }
   void Update()
   {
@@ -115,8 +116,8 @@ Flasher led1(6, 1, 1);
 Flasher led2(7, 1, 1);
 
 
-Sweeper sweeper1(1);
-Sweeper sweeper2(1);
+Sweeper sweeper1(4);
+Sweeper sweeper2(4);
 void setup()
 {
   Serial.begin(9600); // open the arduino serial port
@@ -174,8 +175,26 @@ void loop()
 
           led2.setState(1);
       }
+
+      if(serialvalue == 38 && serialvalue2 != 0){
+//        hasHit = 1;
+//        digitalWrite(6,HIGH);
+
+          sweeper1.setPos(1);
+      }
+
+      if(serialvalue == 42 && serialvalue2 != 0){
+//        hasHit = 1;
+//        digitalWrite(6,HIGH);
+
+          sweeper2.setPos(1);
+      }
+
+      
       led1.Update();
       led2.Update();
+      sweeper1.Update();
+      sweeper2.Update();
 //    randomvalue = random(1000); // pick a new random number
 //    Serial.print(countervalue); // print the counter
 //    Serial.print(" "); // print a space
