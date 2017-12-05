@@ -247,7 +247,7 @@ class Matrix
     
   }
 
-  void setTempo(int mTempo){
+  void setBPM(int mTempo){
     double inputBPM= mTempo;
     double qtrN= round(((60/inputBPM)*1000)*100000)/100000;
     double sixteenN=(qtrN/4);
@@ -256,7 +256,7 @@ class Matrix
     
     OnTime = (long) sixteenN;
     OffTime = (long) sixteenN;
-    Serial.print("tempo is: ");
+    Serial.print(" tempo is: ");
     Serial.print(OnTime);
     Serial.println(); // print a space
     
@@ -373,6 +373,8 @@ class Matrix
   }
 };
  
+
+
  
 Flasher led1(13, 1, 1);
 
@@ -453,7 +455,7 @@ void triggerVisual(int midiKey, int vel){
     }
 
     else if(midiKey == 44 && vel != 0){
-        mBack.ChangeAnimation(4);
+        mBack.ChangeAnimation(3);
     }
 
     //pause cmds
@@ -488,9 +490,7 @@ void triggerVisual(int midiKey, int vel){
   
 }
 
-//void updateBPM( Matrix matrix, int bpm){
-//  matrix.setTempo(bpm);
-//}
+
 
 
 void loop()
@@ -517,6 +517,7 @@ void loop()
 
     triggerVisual(serialvalue, serialvalue2);
 //    updateBPM(mTop, tempo);
+//    mTop.setBPM(tempo);
     updateAll();
   }
 }
