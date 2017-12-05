@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 102.0, 1372.0, 764.0 ],
+		"rect" : [ 34.0, 78.0, 1170.0, 788.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -56,13 +56,13 @@
 					"fontsize" : 12.0,
 					"id" : "obj-102",
 					"maxclass" : "number",
-					"maximum" : 130,
-					"minimum" : 115,
+					"maximum" : 200,
+					"minimum" : 70,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 434.0, 654.0, 35.0, 22.0 ],
+					"patching_rect" : [ 358.0, 659.0, 35.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "number[7]",
@@ -118,7 +118,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 411.0, 618.0, 15.0, 15.0 ],
+					"patching_rect" : [ 410.0, 633.0, 15.0, 15.0 ],
 					"style" : ""
 				}
 
@@ -2946,6 +2946,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-105", 2 ],
+					"order" : 2,
+					"source" : [ "obj-102", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-142", 0 ],
 					"order" : 1,
 					"source" : [ "obj-102", 0 ]
@@ -3064,13 +3072,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-102", 0 ],
 					"source" : [ "obj-142", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-105", 2 ],
-					"source" : [ "obj-145", 0 ]
 				}
 
 			}
@@ -3580,45 +3581,45 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-9" : [ "slider[20]", "slider[20]", 0 ],
-			"obj-94" : [ "number[2]", "number[2]", 0 ],
-			"obj-32" : [ "slider[11]", "slider[11]", 0 ],
-			"obj-68" : [ "number[6]", "number[6]", 0 ],
-			"obj-34" : [ "slider[13]", "slider[13]", 0 ],
-			"obj-16" : [ "slider[8]", "slider[8]", 0 ],
-			"obj-143" : [ "slider[27]", "slider[27]", 0 ],
-			"obj-8" : [ "slider[21]", "slider[21]", 0 ],
-			"obj-26" : [ "slider[9]", "slider[9]", 0 ],
-			"obj-47" : [ "slider[16]", "slider[16]", 0 ],
-			"obj-31" : [ "slider[12]", "slider[12]", 0 ],
-			"obj-15" : [ "slider[7]", "slider[7]", 0 ],
-			"obj-59" : [ "toggle[3]", "toggle[3]", 0 ],
-			"obj-3" : [ "slider[26]", "slider[26]", 0 ],
-			"obj-65" : [ "toggle[1]", "toggle[1]", 0 ],
-			"obj-7" : [ "slider[22]", "slider[22]", 0 ],
-			"obj-86" : [ "number[3]", "number[3]", 0 ],
-			"obj-14" : [ "slider[17]", "slider[17]", 0 ],
-			"obj-54" : [ "number[1]", "number[1]", 0 ],
-			"obj-44" : [ "slider[15]", "slider[15]", 0 ],
-			"obj-4" : [ "slider[25]", "slider[25]", 0 ],
-			"obj-6" : [ "slider[23]", "slider[23]", 0 ],
-			"obj-85" : [ "number[4]", "number[4]", 0 ],
-			"obj-113" : [ "slider[6]", "slider", 0 ],
-			"obj-11" : [ "slider[18]", "slider[18]", 0 ],
-			"obj-102" : [ "number[7]", "number[7]", 0 ],
-			"obj-124" : [ "slider[4]", "slider", 0 ],
-			"obj-91" : [ "toggle", "toggle", 0 ],
-			"obj-51" : [ "number", "number", 0 ],
-			"obj-5" : [ "slider[24]", "slider[24]", 0 ],
-			"obj-126" : [ "slider[1]", "slider", 0 ],
+			"obj-123" : [ "slider[5]", "slider", 0 ],
 			"obj-10" : [ "slider[19]", "slider[19]", 0 ],
+			"obj-85" : [ "number[4]", "number[4]", 0 ],
 			"obj-25" : [ "slider[10]", "slider[10]", 0 ],
 			"obj-39" : [ "slider[14]", "slider[14]", 0 ],
-			"obj-123" : [ "slider[5]", "slider", 0 ],
+			"obj-143" : [ "slider[27]", "slider[27]", 0 ],
+			"obj-68" : [ "number[6]", "number[6]", 0 ],
+			"obj-9" : [ "slider[20]", "slider[20]", 0 ],
 			"obj-84" : [ "number[5]", "number[5]", 0 ],
+			"obj-32" : [ "slider[11]", "slider[11]", 0 ],
 			"obj-62" : [ "toggle[2]", "toggle[2]", 0 ],
+			"obj-34" : [ "slider[13]", "slider[13]", 0 ],
+			"obj-16" : [ "slider[8]", "slider[8]", 0 ],
+			"obj-8" : [ "slider[21]", "slider[21]", 0 ],
+			"obj-102" : [ "number[7]", "number[7]", 0 ],
+			"obj-91" : [ "toggle", "toggle", 0 ],
+			"obj-126" : [ "slider[1]", "slider", 0 ],
+			"obj-47" : [ "slider[16]", "slider[16]", 0 ],
+			"obj-51" : [ "number", "number", 0 ],
+			"obj-26" : [ "slider[9]", "slider[9]", 0 ],
+			"obj-3" : [ "slider[26]", "slider[26]", 0 ],
+			"obj-31" : [ "slider[12]", "slider[12]", 0 ],
+			"obj-15" : [ "slider[7]", "slider[7]", 0 ],
+			"obj-7" : [ "slider[22]", "slider[22]", 0 ],
+			"obj-113" : [ "slider[6]", "slider", 0 ],
+			"obj-14" : [ "slider[17]", "slider[17]", 0 ],
+			"obj-94" : [ "number[2]", "number[2]", 0 ],
+			"obj-125" : [ "slider[3]", "slider", 0 ],
+			"obj-59" : [ "toggle[3]", "toggle[3]", 0 ],
+			"obj-44" : [ "slider[15]", "slider[15]", 0 ],
+			"obj-54" : [ "number[1]", "number[1]", 0 ],
 			"obj-127" : [ "slider", "slider", 0 ],
-			"obj-125" : [ "slider[3]", "slider", 0 ]
+			"obj-65" : [ "toggle[1]", "toggle[1]", 0 ],
+			"obj-6" : [ "slider[23]", "slider[23]", 0 ],
+			"obj-124" : [ "slider[4]", "slider", 0 ],
+			"obj-11" : [ "slider[18]", "slider[18]", 0 ],
+			"obj-86" : [ "number[3]", "number[3]", 0 ],
+			"obj-4" : [ "slider[25]", "slider[25]", 0 ],
+			"obj-5" : [ "slider[24]", "slider[24]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -3657,8 +3658,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
